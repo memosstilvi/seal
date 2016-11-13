@@ -109,5 +109,8 @@ DEPENDENCIES
   thin
   timecop
 
+RUBY VERSION
+   ruby 2.2.0p0
+
 BUNDLED WITH
-   1.10.6
+   1.13.6

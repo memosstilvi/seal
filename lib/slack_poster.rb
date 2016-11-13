@@ -10,8 +10,10 @@ class SlackPoster
     @mood = mood
     @today = Date.today
     @postable_day = !today.saturday? && !today.sunday?
+    if ENV['ENV'] == 'test'
+      @postable_day = true
+    end
     mood_hash
-    channel
     create_poster
   end
 
@@ -44,7 +46,6 @@ class SlackPoster
   def mood_hash
     @mood_hash = {}
     check_season
-    check_if_quotes
     assign_poster_settings
   end
 
@@ -93,18 +94,5 @@ class SlackPoster
 
   def snake_case(string)
     string.downcase.gsub(" ", "_")
-  end
-
-  def check_if_quotes
-    if @team_channel == "#tea"
-      @mood = "tea"
-    elsif @mood == nil
-      @mood = "charter"
-      @postable_day = today.tuesday? || today.thursday?
-    end
-  end
-
-  def channel
-    @team_channel = '#angry-seal-bot-test' if ENV["DYNO"].nil?
   end
 end
