@@ -10,7 +10,7 @@ class SlackPoster
     @mood = mood
     @today = Date.today
     @postable_day = !today.saturday? && !today.sunday?
-    if ENV['ENV'] == 'test'
+    if ENV['RACK_ENV'] == 'test'
       @postable_day = true
     end
     mood_hash
