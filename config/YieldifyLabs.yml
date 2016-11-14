@@ -1,4 +1,8 @@
 nightswatch:
-  channel: '#general'
+  channel: '#nightswatch'
   members:
+    - iasonb
+    - marcindobry
     - memosstilvi
+    - michaelkyriacou
+    - msempere
