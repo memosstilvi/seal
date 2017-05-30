@@ -5,3 +5,10 @@ nightswatch:
     - memosstilvi
     - michaelkyriacou
     - cosenal
+tag:
+  channel: '#khaleesi-tag'
+  members:
+    - anafuiorea
+    - eddking
+    - marcindobry
+    - willfrew
