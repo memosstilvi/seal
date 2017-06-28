@@ -12,3 +12,10 @@ tag:
     - eddking
     - marcindobry
     - willfrew
+drogon:
+  channel: '#drogon'
+  members:
+    - alantreadway
+    - PhilippeMorier
+    - adefreitas
+    - msempere
