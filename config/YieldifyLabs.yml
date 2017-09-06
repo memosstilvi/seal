@@ -1,5 +1,7 @@
 nightswatch:
   channel: '#nightswatch'
+  exclude_labels:
+    - no seal
   members:
     - carlescere
     - memosstilvi
@@ -7,6 +9,8 @@ nightswatch:
     - cosenal
 tag:
   channel: '#khaleesi-tag'
+  exclude_labels:
+    - no seal
   members:
     - anafuiorea
     - eddking
@@ -15,6 +19,8 @@ tag:
     - willfrew
 drogon:
   channel: '#drogon'
+  exclude_labels:
+    - no seal
   members:
     - alantreadway
     - PhilippeMorier
